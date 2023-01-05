@@ -71,7 +71,8 @@ body {
 }
 
 .conteiner {
-  padding: 0px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -167,7 +168,7 @@ body {
   }
 }
 /* ===================================================================================================== */
-.modile-mnu{
+.modile-meu{
   display: flex;
   position: fixed;
   left: 0;
@@ -209,6 +210,12 @@ body {
   background-color: #404bbf;
   fill: #fff;
 }
+
+.modile-menu-conteiner{
+  
+}
+
+
 /* ======================================================= */
 
 @media screen and (min-width: 768px) {
@@ -323,6 +330,148 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent);
+}
+
+
+/* page */
+
+.page{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../img/hero-mobile.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  }
+
+    @media screen and (min-device-pixel-ratio:2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      .page {
+        background-image: linear-gradient(to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../img/hero-mobile@2x.webp);
+      }
+    }
+
+    @media screen and (min-width:768px){
+      .page{
+        
+        padding-bottom: 108px;
+        background-image: linear-gradient(to right,
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)),
+            url(../img/hero-tablet.webp);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+    }
+
+    @media screen and (min-width:768px) and (min-device-pixel-ratio:2),
+    screen and (min-width:768px) and (min-resolution: 192dpi),
+    screen and (min-width:768px) and (min-resolution: 2dppx){
+      .page{
+        
+        background-image: linear-gradient(to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../img/hero-tablet@2x.webp);
+      }
+    }
+
+    @media screen and (min-width:1200px){
+      .page{
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1600px;
+        background-image: linear-gradient(to right,
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)),
+            url(../img/hero-desktop.webp);
+      }
+    }
+
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio:2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx){
+      .page{
+        background-image: linear-gradient(to right,
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)),
+            url(../img/hero-desktop@2x.webp);
+      }
+    }
+
+.page-title {
+  margin-left: auto;
+  margin-right: auto;
+
+  color: white;
+  font-family: var(--primary-font-family);
+  font-weight: var(--h1-font-weight);
+}
+
+@media screen and (max-width: 767px){
+  .page-title{
+    font-size: 36px;
+    line-height: 40px;
+    padding-top: 112px;
+    padding-bottom: 72px;
+    max-width: 318px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .page-title{
+    font-size: 56px;
+    line-height: 60px;
+    padding-top: 112px;
+    padding-bottom: 40px;
+    max-width: 496px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .page-title{
+    padding-top: 188px;
+    margin-bottom: 48px;
+    max-width: 494px;
+  }
+}
+
+.page-button {
+  padding: 16px 32px;
+
+  background-color: var(--accent);
+  color: white;
+
+  font-family: var(--primary-font-family);
+  font-weight: var(--secondary-font-weight);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+.page-button:hover,
+.page-button:focus {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*============================================================== contacts */
 /* .contacts {
