@@ -73,13 +73,13 @@ body {
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 426px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -112,9 +112,6 @@ body {
   .header-container {
     padding-top: 24px;
     padding-bottom: 24px;
-  }
-
-  .header-container {
     justify-content: space-between;
   }
 
@@ -128,7 +125,6 @@ body {
 }
 
 .logo-header {
-  margin-right: 77px;
   color: var(--logo-color);
 
   font-family: var(--primary-logo-font-family);
@@ -180,6 +176,10 @@ body {
   overflow-y: scroll;
 }
 
+.modile-menu-conteiner{
+position: relative;
+}
+
 .modile-menu-modal-close {
   position: absolute;
   top: 40px;
@@ -217,6 +217,93 @@ body {
   perspective: none;
 }
 
+.modile-menu-nav-list{
+  margin-top: 80px;
+  margin-bottom: 284px;
+}
+
+.modile-menu-nav-item:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.modile-menu-nav-item{
+  color: rgba(46, 47, 66, 1);
+  font-family: var(--primary-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  line-height: 95%;
+  letter-spacing: var(--primary-letter-spacing);
+  transition: color var(--transition);
+}
+
+.modile-menu-nav-item:hover,
+.modile-menu-nav-item:focus{
+  color: rgba(64, 75, 191, 1);
+
+}
+
+.modile-menu-contacts-link{
+  display: block;
+  color: rgba(67, 68, 85, 1);
+
+  font-family: var(--primary-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  line-height: 95%;
+  letter-spacing: var(--primary-letter-spacing);
+  margin-bottom: 48px;
+}
+
+.modile-menu-contacts-link-tel{
+  margin-bottom: 40px;
+  transition: font-size var(--transition), font-weight var(--transition), line-height var(--transition), color var(--transition);
+}
+
+.modile-menu-contacts-link-mail{
+  transition: font-size var(--transition), font-weight var(--transition), line-height var(--transition), color var(--transition);
+}
+
+
+.modile-menu-contacts-link-tel:hover,
+.modile-menu-contacts-link-tel:focus,
+.modile-menu-contacts-link-mail:hover,
+.modile-menu-contacts-link-mail:focus{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 40px;
+  color: rgba(77, 90, 229, 1);
+  ;
+}
+
+
+.modile-menu-social_networks{
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.modile-menu-social_networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color var(--transition);
+}
+.modile-menu-social_networks-link:hover,
+.modile-menu-social_networks-link:focus {
+  background-color: #404bbf;
+}
+
+.modile-menu-social_networks-icon {
+  height: 24px;
+  width: 24px;
+}
 /* ======================================================= */
 
 @media screen and (min-width: 768px) {
@@ -332,12 +419,10 @@ body {
   color: var(--accent);
 }
 
-/* page */
+/* ============================= PAGE ========================== */
 
 .page {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -427,9 +512,6 @@ body {
 }
 
 .page-title {
-  margin-left: auto;
-  margin-right: auto;
-
   color: white;
   font-family: var(--primary-font-family);
   font-weight: var(--h1-font-weight);
@@ -485,6 +567,66 @@ body {
   background-color: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+/* ============================= PAGE ========================== */
+/*========================================НАШІ ПЕРЕВАГИ====================================== */
+
+@media screen and (max-width: 1200px) {
+  .display_none
+  {
+  display: none;
+}
+}
+
+.advantages{
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+.advantages-title{
+  margin-bottom: 8px;
+  text-align: center;
+
+  font-family: var(--primary-font-family);
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 2%;
+}
+
+.advantages-text:not(:first-child){
+  margin-bottom: 72px;
+}
+
+
+.advantages-text{
+  max-width: 396px;
+  font-family: var(--primary-font-family);
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+      padding: 0;
+  }
+
+  .advantages-title{
+   
+  }
+
+  .advantages-text{
+    
+  }
+}
+
+/*========================================НАШІ ПЕРЕВАГИ====================================== */
+
 /*============================================================== contacts */
 /* .contacts {
   display: flex;
