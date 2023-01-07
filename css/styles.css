@@ -176,8 +176,8 @@ body {
   overflow-y: scroll;
 }
 
-.modile-menu-conteiner{
-position: relative;
+.modile-menu-conteiner {
+  position: relative;
 }
 
 .modile-menu-modal-close {
@@ -217,16 +217,16 @@ position: relative;
   perspective: none;
 }
 
-.modile-menu-nav-list{
+.modile-menu-nav-list {
   margin-top: 80px;
   margin-bottom: 284px;
 }
 
-.modile-menu-nav-item:not(:last-child){
+.modile-menu-nav-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.modile-menu-nav-item{
+.modile-menu-nav-item {
   color: rgba(46, 47, 66, 1);
   font-family: var(--primary-font-family);
   font-size: 36px;
@@ -238,12 +238,11 @@ position: relative;
 }
 
 .modile-menu-nav-item:hover,
-.modile-menu-nav-item:focus{
+.modile-menu-nav-item:focus {
   color: rgba(64, 75, 191, 1);
-
 }
 
-.modile-menu-contacts-link{
+.modile-menu-contacts-link {
   display: block;
   color: rgba(67, 68, 85, 1);
 
@@ -256,29 +255,28 @@ position: relative;
   margin-bottom: 48px;
 }
 
-.modile-menu-contacts-link-tel{
+.modile-menu-contacts-link-tel {
   margin-bottom: 40px;
-  transition: font-size var(--transition), font-weight var(--transition), line-height var(--transition), color var(--transition);
+  transition: font-size var(--transition), font-weight var(--transition),
+    line-height var(--transition), color var(--transition);
 }
 
-.modile-menu-contacts-link-mail{
-  transition: font-size var(--transition), font-weight var(--transition), line-height var(--transition), color var(--transition);
+.modile-menu-contacts-link-mail {
+  transition: font-size var(--transition), font-weight var(--transition),
+    line-height var(--transition), color var(--transition);
 }
-
 
 .modile-menu-contacts-link-tel:hover,
 .modile-menu-contacts-link-tel:focus,
 .modile-menu-contacts-link-mail:hover,
-.modile-menu-contacts-link-mail:focus{
+.modile-menu-contacts-link-mail:focus {
   font-size: 36px;
   font-weight: 600;
   line-height: 40px;
   color: rgba(77, 90, 229, 1);
-  ;
 }
 
-
-.modile-menu-social_networks{
+.modile-menu-social_networks {
   display: flex;
   gap: 56px;
   justify-content: center;
@@ -422,6 +420,8 @@ position: relative;
 /* ============================= PAGE ========================== */
 
 .page {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -572,18 +572,24 @@ position: relative;
 /*========================================НАШІ ПЕРЕВАГИ====================================== */
 
 @media screen and (max-width: 1200px) {
-  .display_none
-  {
-  display: none;
+  .display_none {
+    display: none;
+  }
+  .gifts {
+    display: none;
+  }
+
+  .advantages-text_interval {
+  margin-bottom: 72px;
 }
 }
 
-.advantages{
-  margin-top: 96px;
-  margin-bottom: 96px;
+.advantages {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.advantages-title{
+.advantages-title {
   margin-bottom: 8px;
   text-align: center;
 
@@ -594,37 +600,112 @@ position: relative;
   letter-spacing: 2%;
 }
 
-.advantages-text:not(:first-child){
-  margin-bottom: 72px;
-}
-
-
-.advantages-text{
-  max-width: 396px;
+.advantages-text {
   font-family: var(--primary-font-family);
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 2%;
+  
 }
 
-@media screen and (min-width: 768px) {
-  .advantages-list{
+@media screen and (min-width: 768px) and (max-width: 1200px)  {
+  .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-      padding: 0;
   }
 
-  .advantages-title{
-   
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .advantages-text{
-    
+  .advantages-item {
+    flex: 0 0 50%;
+  }
+
+  .advantages-item:nth-child(2n + 1) {
+    padding-right: 24px;
   }
 }
 
+@media screen and (min-width: 1200px){
+  .advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.advantages-item {
+  flex-basis: 264px;
+}
+
+.advantages-title {
+  margin-bottom: 8px;
+  color: var(--title--text-color);
+
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: var(--secondary-font-size);
+  line-height: var(--secondary-line-height);
+  letter-spacing: var(--primary-letter-spacing);
+}
+
+.advantages-text {
+  height: 72px;
+width: 264px;
+
+
+  color: var(--primary-text-color);
+
+  font-family: var(--primary-font-family);
+  font-weight: var(--primary-font-weight);
+  font-size: var(--primary-font-size);
+  line-height: var(--primary-line-height);
+  letter-spacing: var(--primary-letter-spacing);
+}
+.icon {
+  display: block;
+  display: flex;
+  margin-bottom: 8px;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+}
+
+
+
+
+
+
+
+
+.gifts {
+  padding-bottom: 120px;
+}
+
+.gifts-title {
+  margin-bottom: 72px;
+
+  color: var(--title--text-color);
+
+  font-family: var(--primary-font-family);
+  font-weight: var(--secondary-font-weight);
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.gifts-list {
+  display: flex;
+  gap: 24px;
+}
 /*========================================НАШІ ПЕРЕВАГИ====================================== */
 
 /*============================================================== contacts */
@@ -1243,7 +1324,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 } */
 
 /* ==============================================================-----------------BACKDROP---------------*/
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1303,7 +1384,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   background-color: #404bbf;
   fill: #fff;
 }
- /* =================================================================================Modal Form============= */
+/* =================================================================================Modal Form============= */
 .modal-top-text {
   font-family: "Roboto";
   font-style: normal;
@@ -1456,7 +1537,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   position: absolute;
 }
 
-.opacity{
+.opacity {
   opacity: 0;
 }
 
@@ -1472,7 +1553,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .modal-form-checkbox-label::before {
   content: " ";
   position: absolute;
-  
+
   cursor: pointer;
   width: 16px;
   height: 16px;
@@ -1506,7 +1587,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   color: var(--accent);
 }
 
-.footer-form{
+.footer-form {
   display: flex;
 }
 
@@ -1552,7 +1633,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   line-height: 24px;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
-
 }
 
 .footer-form-subscribe-input:hover,
