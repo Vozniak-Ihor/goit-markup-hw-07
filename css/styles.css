@@ -580,8 +580,8 @@ body {
   }
 
   .advantages-text_interval {
-  margin-bottom: 72px;
-}
+    margin-bottom: 72px;
+  }
 }
 
 .advantages {
@@ -591,10 +591,8 @@ body {
 
 .advantages-title {
   margin-bottom: 8px;
-  text-align: center;
-
   font-family: var(--primary-font-family);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 2%;
@@ -605,10 +603,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px)  {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -628,62 +625,54 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .advantages-list {
+    display: flex;
+    gap: 24px;
+  }
+  .advantages-item {
+    flex-basis: 264px;
+  }
+
+  .advantages-title {
+    margin-bottom: 8px;
+    color: var(--title--text-color);
+
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    font-size: var(--secondary-font-size);
+    line-height: var(--secondary-line-height);
+    letter-spacing: var(--primary-letter-spacing);
+  }
+
+  .advantages-text {
+    height: 72px;
+    width: 264px;
+
+    color: var(--primary-text-color);
+
+    font-family: var(--primary-font-family);
+    font-weight: var(--primary-font-weight);
+    font-size: var(--primary-font-size);
+    line-height: var(--primary-line-height);
+    letter-spacing: var(--primary-letter-spacing);
+  }
+  .icon {
+    display: block;
+    display: flex;
+    margin-bottom: 8px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4fd;
+    border-radius: 4px;
+  }
 }
-
-.advantages-list {
-  display: flex;
-  gap: 24px;
-}
-.advantages-item {
-  flex-basis: 264px;
-}
-
-.advantages-title {
-  margin-bottom: 8px;
-  color: var(--title--text-color);
-
-  font-family: var(--primary-font-family);
-  font-weight: 600;
-  font-size: var(--secondary-font-size);
-  line-height: var(--secondary-line-height);
-  letter-spacing: var(--primary-letter-spacing);
-}
-
-.advantages-text {
-  height: 72px;
-width: 264px;
-
-
-  color: var(--primary-text-color);
-
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight);
-  font-size: var(--primary-font-size);
-  line-height: var(--primary-line-height);
-  letter-spacing: var(--primary-letter-spacing);
-}
-.icon {
-  display: block;
-  display: flex;
-  margin-bottom: 8px;
-  height: 112px;
-  justify-content: center;
-  align-items: center;
-  background: #f4f4fd;
-  border-radius: 4px;
-}
-}
-
-
-
-
-
-
-
 
 .gifts {
   padding-bottom: 120px;
@@ -707,6 +696,114 @@ width: 264px;
   gap: 24px;
 }
 /*========================================НАШІ ПЕРЕВАГИ====================================== */
+
+/* ==========================================КОМАНДА====================================== */
+
+.team {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--team-background-color);
+}
+
+.team-title {
+  margin-bottom: 72px;
+
+  color: var(--title--text-color);
+
+  font-family: var(--primary-font-family);
+  font-weight: var(--secondary-font-weight);
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+
+.team-item {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 768px){
+  .team-item:not(:last-child){
+  margin-bottom: 72px;
+}
+}
+
+
+
+.team-foto {
+  margin-bottom: 32px;
+}
+
+.team-name {
+  margin-bottom: 8px;
+
+  color: var(--title--text-color);
+  font-family: var(--primary-font-family);
+  font-weight: var(--secondary-font-weight);
+  font-size: 20px;
+  list-style: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-name {
+  margin-bottom: 8px;
+}
+
+.team-item-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 36px;
+}
+
+.team-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color var(--transition);
+}
+.team-item-link:hover,
+.team-item-link:focus {
+  background-color: #404bbf;
+}
+
+.team-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.team-item:nth-child(2n+1){
+  margin-right: 24px;
+}
+.team-item{
+  margin-bottom: 64px;
+
+}
+}
+
+/* ==========================================КОМАНДА====================================== */
 
 /*============================================================== contacts */
 /* .contacts {
