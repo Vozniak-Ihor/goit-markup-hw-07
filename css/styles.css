@@ -1429,7 +1429,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   .logo-footer {
     justify-content: center;
   }
+
   .footer-text {
+    margin-bottom: 72px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1872,9 +1874,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   display: flex;
 }
 
-.footer-text{
-  margin-bottom: 72px;
-}
+
 
 .kkk{
   margin-right: 24px;
