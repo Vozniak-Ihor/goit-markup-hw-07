@@ -590,6 +590,7 @@ body {
 }
 
 .advantages-title {
+  text-align: center;
   margin-bottom: 8px;
   font-family: var(--primary-font-family);
   font-weight: 700;
@@ -611,9 +612,8 @@ body {
     flex-wrap: wrap;
   }
 
-  .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
+  .advantages-title {
+    text-align: start;
   }
 
   .advantages-item {
@@ -718,7 +718,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-
 .team-item {
   background-color: #fff;
   text-align: center;
@@ -727,13 +726,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 768px){
-  .team-item:not(:last-child){
-  margin-bottom: 72px;
+@media screen and (max-width: 768px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
-}
-
-
 
 .team-foto {
   margin-bottom: 32px;
@@ -786,25 +783,95 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-list {
-    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
+    justify-content: center;
+  }
+
+  .team-item:nth-child(2n + 1) {
+    margin-right: 24px;
+  }
+  .team-item_margin {
+    margin-bottom: 64px;
+  }
 }
 
-.team-item:nth-child(2n+1){
-  margin-right: 24px;
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
 }
-.team-item{
-  margin-bottom: 64px;
-
-}
-}
-
 /* ==========================================КОМАНДА====================================== */
 
+/* ========================================Customers ==========================*/
+
+.Customers {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.Customers-conteiner {
+  margin-left: auto;
+  margin-right: auto;
+}
+.Customers-title {
+  margin-bottom: 72px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: var(--title--text-color);
+}
+.Customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .Customers-list {
+    column-gap: 16px;
+    row-gap: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Customers-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+.Customers-color {
+  fill: rgba(142, 143, 153, 1);
+  transition: fill var(--transition);
+}
+
+.Customers-item-link {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  transition: border-color var(--transition);
+  outline: none;
+}
+.Customers-color:hover,
+.Customers-color:focus,
+.Customers-item-link:hover,
+.Customers-item-link:focus {
+  fill: var(--accent);
+  border-color: var(--accent);
+}
 /*============================================================== contacts */
 /* .contacts {
   display: flex;
@@ -1328,16 +1395,14 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 /* ============================================================== FOOTER */
 
-/* .conteiner-footer {
-  display: flex;
+.conteiner-footer {
   margin: 0 auto;
   padding: 0px 15px;
 }
 
 .footer {
-  display: flex;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 96px;
+  padding-top: 96px;
   background-color: var(--page-background-color);
 }
 
@@ -1360,13 +1425,51 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   transition: color var(--transition);
 }
 
+@media screen and (max-width: 767px) {
+  .logo-footer {
+    justify-content: center;
+  }
+  .footer-text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-social-media-text {
+    text-align: center;
+  }
+
+  .footer-item-list {
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+
+  .footer-form-p-subscribe{
+    text-align: center;
+  }
+
+  .footer-form-subscribe-input {
+    margin-bottom: 16px;
+  }
+
+  .footer-form-bnt-subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+
+
+
 .logo-footer:hover,
 .logo-footer:focus {
   color: var(--accent);
 }
 
 .footer-text {
- width: 264px;
+  width: 264px;
   color: #e7e9fc;
 
   font-family: var(--primary-font-family);
@@ -1374,10 +1477,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   font-size: var(--primary-font-size);
   line-height: var(--primary-line-height);
   letter-spacing: var(--primary-letter-spacing);
-}
-
-.footer-social-media {
-  margin-right: 80px;
 }
 
 .footer-social-media-text {
@@ -1389,10 +1488,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-}
-
-.kkk {
-  margin-right: 120px;
 }
 
 .footer-item-list {
@@ -1418,7 +1513,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .footer-icon-background-color:hover,
 .footer-icon-background-color:focus {
   background-color: rgba(49, 208, 170, 1);
-} */
+}
 
 /* ==============================================================-----------------BACKDROP---------------*/
 .backdrop {
@@ -1684,10 +1779,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   color: var(--accent);
 }
 
-.footer-form {
-  display: flex;
-}
-
 .footer-form-p-subscribe {
   font-family: "Roboto";
   font-style: normal;
@@ -1696,16 +1787,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
-
   margin-bottom: 16px;
 }
 
 .footer-form-subscribe-input {
-  display: flex;
-  width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
-  margin-right: 24px;
   background-color: transparent;
 
   font-family: "Roboto";
@@ -1776,4 +1864,47 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 .modal-form-checkbox-input:focus + .modal-form-checkbox-label::before {
   border: 2px solid black;
+}
+
+
+@media screen and (min-width: 768px){
+  .footer-position {
+  display: flex;
+}
+
+.footer-text{
+  margin-bottom: 72px;
+}
+
+.kkk{
+  margin-right: 24px;
+}
+
+.footer-form-subscribe-input {
+  width: 264px;
+  margin-right: 24px;
+}
+
+.footer-form{
+  display: flex;
+}
+}
+
+@media screen and (min-width: 1200px){
+  .footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-text{
+    margin-bottom: 0;
+  }
+
+  .kkk{
+    margin-right: 120px;
+  }
+
+  .footer-social-media{
+    margin-right: 80px;
+  }
 }
