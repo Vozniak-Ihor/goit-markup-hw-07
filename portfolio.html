@@ -21,38 +21,117 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="Portfolio-header">
-      <div class="conteiner header-conteiner">
+    <!-- ============================= ХЕДЕР ======================== -->
+    <header class="header">
+      <div class="conteiner header-container">
         <a href="./index.html" class="logo-header"
           ><span class="header-web">Web</span>Studio</a
         >
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">Studio</a>
+              <a href="./index.html" class="nav-link nav-link-studio">Studio</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link nav-link-Portfolio"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
         <ul class="contacts">
           <li>
-            <a href="mailto:info@devstudio.com" class="contacts-link"
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-link contacts-link-mail"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+110001111111" class="contacts-link"
+            <a href="tel:+110001111111" class="contacts-link contacts-link-tel"
               >+11 (000) 111-11-11</a
             >
           </li>
         </ul>
+        <button type=" button" data-modile-menu-open class="bnt-menu">
+          <svg width="32" height="22">
+            <use href="./img/sprite.svg#icon-menu "></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modile-menu is-hidden" data-modile-menu>
+        <div class="conteiner modile-menu-conteiner">
+          <button class="modile-menu-modal-close" data-modile-menu-close>
+            <svg class="modile-menu-model-close-icon">
+              <use href="./img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="">
+            <li class="modile-menu-nav-item">
+              <a
+                href="./index.html"
+                class="modile-menu-nav-link modile-menu-nav-link-studio"
+                >Studio</a
+              >
+            </li>
+            <li class="modile-menu-nav-item">
+              <a href="./portfolio.html" class="modile-menu-nav-link-portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="modile-menu-nav-item">
+              <a href="" class="modile-menu-nav-link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="modile-menu-contacts">
+            <li>
+              <a
+                href="tel:+110001111111"
+                class="modile-menu-contacts-link modile-menu-contacts-link-tel"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="modile-menu-contacts-link modile-menu-contacts-link-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="modile-menu-social_networks">
+            <li>
+              <a href="" class="modile-menu-social_networks-link">
+                <svg class="modile-menu-social_networks-icon">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="modile-menu-social_networks-link">
+                <svg class="modile-menu-social_networks-icon">
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="modile-menu-social_networks-link">
+                <svg class="modile-menu-social_networks-icon">
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="modile-menu-social_networks-link">
+                <svg class="modile-menu-social_networks-icon">
+                  <use href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+    <!-- ================================ХЕДЕР====================================== -->
     <main>
       <section class="Portfolio-content">
         <div class="conteiner">
@@ -284,8 +363,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+     <!-- ====================================F00TER================================================= -->
+     <footer class="footer">
       <div class="conteiner conteiner-footer">
+        
         <div class="kkk">
           <a href="./index.html" class="logo-footer"
             ><span class="web-footer">Web</span>Studio</a
@@ -295,7 +376,6 @@
             digital marketing & growth solutions.
           </p>
         </div>
-
         <div class="footer-social-media">
           <h3 class="footer-social-media-text">Social media</h3>
           <ul class="footer-item-list">
@@ -329,6 +409,7 @@
             </li>
           </ul>
         </div>
+    
         <div>
           <p class="footer-form-p-subscribe">Subscribe</p>
 
@@ -351,5 +432,7 @@
         </div>
       </div>
     </footer>
+    <!-- ======== ===========================F00TER================================================= -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
