@@ -176,9 +176,9 @@ body {
   overflow-y: scroll;
 }
 
-.modile-menu-conteiner {
+/* .modile-menu-conteiner {
   position: relative;
-}
+} */
 
 .modile-menu-modal-close {
   position: absolute;
@@ -242,6 +242,11 @@ body {
   color: rgba(64, 75, 191, 1);
 }
 
+.modile-menu-contacts{
+  margin-top: auto;
+  margin-bottom: 48px;
+}
+
 .modile-menu-contacts-link {
   display: block;
   color: rgba(67, 68, 85, 1);
@@ -252,7 +257,7 @@ body {
   line-height: 24px;
   line-height: 95%;
   letter-spacing: var(--primary-letter-spacing);
-  margin-bottom: 48px;
+  
 }
 
 .modile-menu-contacts-link-tel {
@@ -585,6 +590,14 @@ body {
     margin-bottom: 72px;
   }
 }
+
+@media screen and (max-width: 767px){
+.advantages-item:not(:last-child){
+  margin-bottom: 72px;
+}
+}
+
+
 
 .advantages {
   padding-top: 96px;
@@ -1077,10 +1090,8 @@ body {
     justify-content: center;
   }
 
-  .footer-text {
+  .kkk{
     margin-bottom: 72px;
-    margin-right: auto;
-    margin-left: auto;
   }
   .footer-social-media-text {
     text-align: center;
@@ -1526,6 +1537,7 @@ body {
 
   .kkk {
     margin-right: 24px;
+    margin-bottom: 72px;
   }
 
   .footer-form-subscribe-input {
@@ -1535,10 +1547,6 @@ body {
 
   .footer-form {
     display: flex;
-  }
-
-  .footer-text {
-    margin-bottom: 72px;
   }
 }
 
